@@ -74,7 +74,7 @@ You don't need to tell PHP what the type of variable should be. It can figure it
 
  Let's make our Application look a little pretty.
 
-```
+```html
 <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
 ```
 
