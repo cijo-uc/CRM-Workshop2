@@ -127,9 +127,9 @@ class Cat extends Pet {
 }
 
 $dog = new Dog();
-$dog->setName('Alex');
+$dog->setName('Alex'); // you can reuse common methods across classes through
 $dog->sayHi();
-echo $dog->getBreed();
+echo $dog->getBreed(); //each child class can have their own custom methods
 
 $cat = new Cat();
 $cat->setName('Garfield');
