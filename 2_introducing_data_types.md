@@ -86,6 +86,7 @@ print_r($fruits);
 ?>
 ```
 
+**Associative Arrays**
 
 Suppose you need to store the price of each fruit as well.
 
@@ -108,7 +109,3 @@ foreach($fruit_prices as $fruit => $price) {
 }
 ?>
 ```
-
-## Before you move ahead
-
- 
