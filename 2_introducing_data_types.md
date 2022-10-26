@@ -28,7 +28,7 @@ if ($billAmount < 100) {
     $cashBack = 0.05 * $billAmount;
 }
 
-echo 'Total Cashback earned: $cashBack';
+echo "Total Cashback earned: {$cashBack}";
 ?>
 ```
 
@@ -95,8 +95,8 @@ You can use associative arrays for this.
 ```php
 <?php
 $fruit_prices = ['apple' => 40, 'orange' => 60, 'pear' => 30];
-$fruit = 'apple'
-echo 'Price of $fruit is $fruit_prices["apple"]';
+$fruit = 'apple';
+echo "Price of {$fruit} is {$fruit_prices['apple']}";
 ?>
 ```
 
@@ -105,7 +105,7 @@ To loop through each fruit and print its price you can also use the foreach loop
 ```php
 <?php
 foreach($fruit_prices as $fruit => $price) {
-    echo 'Price of $fruit is $price';
+    echo "Price of $fruit is {$price}";
 }
 ?>
 ```

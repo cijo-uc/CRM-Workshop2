@@ -30,7 +30,7 @@ Functions can also receive arguments and use them. For example,
 ```php
 
 function sayHiToUser($userName) {
-    echo 'Hi $userName';
+    echo "Hi {$userName}";
 }
 
 sayHiToUser('Raj');

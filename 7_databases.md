@@ -37,6 +37,8 @@ new mysqli(host, username, password, databaseName);
 
 Let's create a Class we can keep reusing to handle our DB Connection. 
 
+In app/ folder create a file called db.php
+
 ```php
 
 class DBConnector{
@@ -157,7 +159,6 @@ class Pet {
     public function insertToDB($connection): void
     {
         $sql = "INSERT INTO `pet` (name,species,description, price) VALUES (?, ?, ?, ?)";
-        $this->printValues();
         $stmt = $connection->prepare($sql);
         $stmt->bind_param("sssd", $this->getName(), $this->getSpecies(), $this->getDescription(), $this->getPrice());
         $result = $stmt->execute();

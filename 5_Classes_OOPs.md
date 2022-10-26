@@ -57,7 +57,7 @@ class Person
     }
 
     public function sayHi() {
-        echo 'Hi $this->getName()';
+        echo "Hi {$this->getName()}";
     }
 }
 
@@ -80,7 +80,7 @@ class Person {
     }
 
     function sayHi() {
-        echo 'Hi $this->name';
+        echo "Hi {$this->name}";
     }
 }
 
@@ -107,7 +107,7 @@ class Pet{
         return $this->name;
     }
     public function sayHi() {
-        echo 'Hi $this->getName()';
+        echo "Hi {$this->getName()}";
     }
 }
 

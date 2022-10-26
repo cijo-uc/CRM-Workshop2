@@ -48,8 +48,8 @@ let's create a new file called pets.php in your app folder.
 $pets = ['1' => 'sally', '2' => 'milo', '3' => 'jasper'];
 $id = $_GET['id'];
 
-if isset($id) {
-    echo 'You asked for $pets[$id]';
+if (isset($id)) {
+    echo "You asked for {$pets[$id]}";
 }
 ```
 
@@ -59,7 +59,7 @@ A POST request is generally used to POST data to a web page.
 
 Let's use it to insert our own pet.
 
-Create a new page in your app folder called newPet.php
+Create a new page in your app folder called new.php
 
 ```html
 <h1> Insert New Pet </h1>
@@ -98,7 +98,7 @@ class Pet{
         return $this->name;
     }
     public function sayHi() {
-        echo 'Hi $this->getName()';
+        echo "Hi {$this->getName()}";
     }
 }
 
@@ -126,7 +126,7 @@ switch($_POST['type']) {
 
     case 'Dog': 
         $dog = new Dog();
-        $dog->stName($_POST['name'];
+        $dog->setName($_POST['name']);
         $dog->sayHi();
         break;
 
